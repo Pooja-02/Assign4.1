@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffff">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+        android:visibility="visible"
+    tools:context="krishna.assign41.MainActivity"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout">
+
+
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:text="Email"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:background="#ffffff"
+        android:inputType="textPassword|textVisiblePassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:text="Password" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_below="@+id/password"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Not a member? Sigin up  now."
+        android:textColor="@android:color/background_light" />
+
+</RelativeLayout>
